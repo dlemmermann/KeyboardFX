@@ -4,7 +4,7 @@ import com.dlsc.keyboardfx.Keyboard;
 import com.dlsc.keyboardfx.KeyboardPane;
 import com.dlsc.keyboardfx.KeyboardView;
 
-import javax.xml.bind.JAXBException;
+import jakarta.xml.bind.JAXBException;
 
 public class KeyboardPaneWithArrowKeysApp extends KeyboardPaneDemoApp {
 

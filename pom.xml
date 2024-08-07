@@ -59,7 +59,9 @@
         <javax.activation.version>1.2.0</javax.activation.version>
         <lombok.version>1.18.6</lombok.version>
         <ikonli.version>12.2.0</ikonli.version>
-        <jaxb.version>2.3.3</jaxb.version>
+        <com.sun.jaxb.impl.version>2.3.4</com.sun.jaxb.impl.version>
+        <jaxb.version>4.0.2</jaxb.version>
+        <glassfish.jaxb.runtime.version>4.0.5</glassfish.jaxb.runtime.version>
     </properties>
 
     <dependencyManagement>
@@ -86,9 +88,15 @@
             <dependency>
                 <groupId>com.sun.xml.bind</groupId>
                 <artifactId>jaxb-impl</artifactId>
-                <version>${jaxb.version}</version>
+                <version>${com.sun.jaxb.impl.version}</version>
             </dependency>
-
+            
+            <dependency>
+		        <groupId>org.glassfish.jaxb</groupId>
+		        <artifactId>jaxb-runtime</artifactId>
+		        <version>${glassfish.jaxb.runtime.version}</version>
+		    </dependency>
+		    
             <dependency>
                 <groupId>org.kordamp.ikonli</groupId>
                 <artifactId>ikonli-core</artifactId>
